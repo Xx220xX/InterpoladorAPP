@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Interpolador</string>
+    <string name="valor_de_y">Valor de Y</string>
+    <string name="valor_de_x">Valor de X</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="editar">Editar</string>
+    <string name="valor_invalido">valor inválido</string>
+    <string name="adicionar_um_novo_ponto">Adicionar um novo ponto</string>
+    <string name="apagar_todos_pontos">Apagar todos pontos</string>
+    <string name="voltar">Voltar</string>
+    <string name="apagar_todos_os_pontos">APAGAR TODOS OS PONTOS</string>
+    <string name="apagar_">apagar?</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="apagar_par_de_pontos">Apagar par de pontos</string>
+    <string name="ponto_apagado">Ponto apagado</string>
+    <string name="lagrange">LAGRANGE</string>
+    <string name="newton">NEWTON</string>
+    <string name="interpolar_na_forma_de">Interpolar na forma de:</string>
+    <string name="diferen_as_dividida">Diferenças dividida</string>
+    <string name="equa_o_simplificada">Equação simplificada</string>
+    <string name="equa_o_completa">Equação completa</string>
+    <string name="explicacao_para_ordem_zero">uma equação de grau 0 so funcionara para x = y = c</string>
+    <string name="explicacao_ordem_maior_igual_numero_pontos">é necessário um ponto a mais que a ordem requerida</string>
+    <string name="divisao_zero_zero">\nResultado não confiavel\nnos calculos foram encontrados 0/0(NaN)</string>
+    <string name="divisao_por_zero">\nResultado não confiavel\nnos calculos foram encontrados divisões por 0(inf)</string>
+    <string name="divisao_zer_zer_e_div_por_zer">\nResultado não confiavel\nnos calculos foram encontrados divisões por 0(inf) e 0/0(NaN)</string>
+    <string name="tempo_restantes">Restantes</string>
+    <string name="salvar">SALVAR</string>
+    <string name="total_de_pontos">total de pontos:</string>
+    <string name="ordem_requerida">ordem requerida:</string>
+    <string name="opcoes">OPÇÕES</string>
+    <string name="casa_apos_virgula">numero de casas após a virgula</string>
+    <string name="arredondar_durante_calculos">arredondar durante os calculos</string>
+    <string name="fun_es_ls">Funções Ls</string>
+    <string name="minutos">minutos</string>
+    <string name="segundos">segundos</string>
+    <string name="cancelar_interpolacao">Deseja cancelar a interpolacao?</string>
+    <string name="cancelar_interpolacao_interromper">Todo processo realizado sera perdido</string>
+    <string name="ajuda">ajuda</string>
+    <string name="calculando_tempo">calculando tempos restante</string>
+</resources>

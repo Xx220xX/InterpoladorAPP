@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/main_interpolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="INTERPOLAR" />
+
+    <RelativeLayout
+        android:id="@+id/main_tela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_interpolar"
+        android:layout_below="@id/main_edit"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/main_layout_xy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp">
+
+            <TextView
+                style="@style/tabelastyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="X" />
+
+            <TextView
+                style="@style/tabelastyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Y" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/main_tabela"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_layout_xy"
+            android:numColumns="2"
+
+            android:paddingStart="1dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="1dp"
+            android:paddingBottom="1dp" />
+    </RelativeLayout>
+
+    <Button
+
+        android:id="@+id/main_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:drawableStart="@android:drawable/ic_menu_edit"
+        android:text="@string/editar" />
+
+    <Button
+        android:id="@+id/main_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:drawableStart="@android:drawable/ic_menu_help"
+        android:text="@string/ajuda"
+        android:textSize="11sp" />
+</RelativeLayout>

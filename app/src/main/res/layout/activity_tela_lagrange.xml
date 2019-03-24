@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaLagrange">
+
+    <RadioGroup
+        android:id="@+id/lagrange_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:animateLayoutChanges="true">
+
+        <RadioButton
+            android:id="@+id/lagrange_b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/equa_o_simplificada" />
+
+        <RadioButton
+            android:id="@+id/lagrange_b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fun_es_ls" />
+
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lagrange_status"
+        android:layout_below="@id/lagrange_radio_group"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp">
+
+        <ScrollView
+            android:id="@+id/lagrange_scrol_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/lagrange_results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </ScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/lagrange_ls_horizontal_scrollscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lagrange_ls_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lagrange_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lagrange_progres_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/interpolar_na_forma_de" />
+
+    <RelativeLayout
+        android:id="@+id/lagrange_progres_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/lagrange_progres_int"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="15%" />
+
+        <ProgressBar
+            android:id="@+id/lagrange_progres_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lagrange_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/voltar" />
+
+
+</RelativeLayout>
