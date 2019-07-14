@@ -33,6 +33,7 @@ public class MainActivity extends Activity {
     Button interpolar;
     RelativeLayout telona;
     Button help;
+    static boolean gerarP = true;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +44,10 @@ public class MainActivity extends Activity {
         interpolar = findViewById(R.id.main_interpolar);
         telona = findViewById(R.id.main_tela);
         help = findViewById(R.id.main_help);
-        //gerarPontos();
+        if (gerarP) {
+            gerarPontos();
+            gerarP = false;
+        }
         configuracoes_de_button();
         configurarButtonHelp();
         configuracoes_de_gridView();
@@ -56,19 +60,19 @@ public class MainActivity extends Activity {
         help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),TelaAjuda.class));
+                startActivity(new Intent(getApplicationContext(), TelaAjuda.class));
                 finish();
             }
         });
     }
 
     private void gerarPontos() {
-        int points = 50;
+        int points = 3;
         double[] x = new double[points];
         double[] y = new double[points];
         for (int i = 0; i < x.length; i++) {
             x[i] = i;
-            y[i] =i;
+            y[i] = i*2*i*i*i*i*i*i*i*i*i*i;
         }
         Dados.getInstance().setTabela(new Tabela(x, y));
     }
